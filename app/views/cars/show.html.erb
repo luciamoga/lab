@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<table>
+<th>
   <strong>Color:</strong>
+</th>
   <%= @car.color %>
-</p>
 
-<p>
+
+<th>
   <strong>Hp:</strong>
+</th>
   <%= @car.hp %>
-</p>
 
-<p>
+
+<th>
   <strong>Model:</strong>
+</th>
   <%= @car.model %>
-</p>
 
+<table>
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
